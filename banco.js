@@ -70,6 +70,9 @@ body {
 
 <style>
 
+#header_icon{
+           max-width: 70vw;
+        }
 
 #title_logo{
            font-family: "Open Sans";
@@ -397,12 +400,18 @@ padding:8px 0 0 0;
     display:flex;
   }
      
-   #title_logo{
+ #header_icon{
+           padding:20px 0 0 0 !important;
+           max-width: 80vw;
+        }
+
+#title_logo{
            font-family: "Open Sans";
-           font-size:18px !important; 
+           font-size:16px !important; 
            font-weight: 500 !important;
-           padding:20px 0 24px 0 !important;
-      }
+           padding: 8px 0 10px 0 !important;
+           max-width: 80vw;
+        }
 
    #por_onde{
     font-family: 'Open Sans';
@@ -478,10 +487,31 @@ width:100%;
     width: 100%;
   }
 
+     .mobile_option{
+    max-width: 100%;
+    padding: 0 40px 0 40px !important;
+    display:flex;
+  }
+
+
 }
 
 /* Telas pequenas (até 576px) */
 @media only screen and (max-width: 576px) {
+
+#header_icon{
+           padding:20px 0 0 0 !important;
+           max-width: 70vw;
+        }
+
+#title_logo{
+           font-family: "Open Sans";
+           font-size:18px !important; 
+           font-weight: 500 !important;
+           padding:8px 0 24px 0 !important;
+           max-width: 70vw;
+        }
+
   .container {
     max-width: 100%;
     padding: 0 40px 0 40px !important;
@@ -514,14 +544,7 @@ line-height: 140%;
 margin: 10px 0 10px 16px;
 }
     
-   #title_logo{
-           font-family: "Open Sans";
-           font-size:18px !important; 
-           font-weight: 500 !important;
-           padding:20px 0 24px 30px !important;
-      }
-
-   .mobile_option{
+  .mobile_option{
     max-width: 100%;
     padding: 0 40px 0 40px !important;
     display:flex;
@@ -540,6 +563,7 @@ margin: 10px 0 10px 16px;
  #form_topo p{
      font-size: 17px;
       }
+
  .sucesso {
 border-color: #E1F3ED;
 color: #000;
@@ -556,23 +580,25 @@ width:100%;
 
 /* Telas grandes (mais de 1200px) */
 @media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    
-  }
+  
 
   .mobile_option{
     max-width: 100%;
     padding: 0 40px 0 40px !important;
-    display:flex;
+    display:none;
   }
 
-   #title_logo{
+ #header_icon{
+           max-width: 70vw;
+        }
+
+#title_logo{
            font-family: "Open Sans";
-           font-size:18px !important; 
+           font-size:16px !important; 
            font-weight: 500 !important;
-           padding:20px 0 24px 30px !important;
-      }
+           padding:8px 0 24px 30px !important;
+           max-width: 70vw;
+        }
  
   }
     
